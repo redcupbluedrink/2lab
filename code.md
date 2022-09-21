@@ -4,6 +4,7 @@
 
 /* 1
 int main() {
+
 	int a = 1;
 	int b = 3;
 	int c = 4;
@@ -155,6 +156,7 @@ int main() {
 
 /* 5
 int main() {
+
 	int k = 10000;
 	int a[] = { 2, 3, 4, 1 };
 	int i;
@@ -171,6 +173,7 @@ int main() {
 
 /* 6
 int main() {  
+
 	int min = 100;
 	int max = 0;
 	int a[] = { 1, 5, 12, 13 };
@@ -189,6 +192,7 @@ int main() {
 
 /* 7
 int main() { 
+
 	int K, M, N, min, max;
 	min=10000;
 	max=-10000;
@@ -216,16 +220,17 @@ int main() {
 	if (max < N) {
 		max = N;
 	}
-M = (K + N + M) - (min + max);
-N = max;
-K = min;
-printf("%d %d %d",K, M, N);
+	M = (K + N + M) - (min + max);
+	N = max;
+	K = min;
+	printf("%d %d %d",K, M, N);
 }
 */
 
 
 /* 8
 int main() {
+
 	int i, j;
     int a[4];
     for(i = 0 ; i < 4; i++) { 
@@ -246,6 +251,7 @@ int main() {
 
 /* 9
 int main() { 
+
 	int a1, a2, a3, min, max;
 	min = 10000;
 	max = -10000;
