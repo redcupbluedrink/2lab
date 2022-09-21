@@ -12,8 +12,6 @@ int main() {
 	int f = 7;
 	int proiz = (a*b*c*d*e*f);
 	int sloj = (a+b+c+d+e+f);
-
-
 	if (sloj > proiz) {
 		printf("Bolshe na %d", sloj - proiz);
 	} else {
