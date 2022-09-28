@@ -5,14 +5,23 @@
 /* 1
 int main() {
 
-	int a = 1;
-	int b = 3;
-	int c = 4;
-	int d = 5;
-	int e = 6;
-	int f = 7;
+	int a, b, c, d, e, f;
+	printf("a = ");
+	scanf("%d", &a);
+	printf("b = ");
+	scanf("%d", &b);
+	printf("c = ");
+	scanf("%d", &c);
+	printf("d = ");
+	scanf("%d", &d);
+	printf("e = ");
+	scanf("%d", &e);
+	printf("f = ");
+	scanf("%d", &f);
 	int proiz = (a*b*c*d*e*f);
 	int sloj = (a+b+c+d+e+f);
+
+
 	if (sloj > proiz) {
 		printf("Bolshe na %d", sloj - proiz);
 	} else {
@@ -27,11 +36,17 @@ int main() {
 /* 2
 int main() {
 
-	int a = 2;
-	int b = -3;
-	int c = 4;
-	int d = 5;
-	int e = -6;
+	int a, b, c, d, e;
+	printf("a = ");
+	scanf("%d", &a);
+	printf("b = ");
+	scanf("%d", &b);
+	printf("c = ");
+	scanf("%d", &c);
+	printf("d = ");
+	scanf("%d", &d);
+	printf("e = ");
+	scanf("%d", &e);
 	int sum = 0;
 
 
@@ -58,10 +73,15 @@ int main() {
 /* 3
 int main() {
 
-	int a = 1;
-	int b = -2;
-	int c = -3;
-	int d = 4;
+	int a, b, c, d;
+	printf("a = ");
+	scanf("%d", &a);
+	printf("b = ");
+	scanf("%d", &b);
+	printf("c = ");
+	scanf("%d", &c);
+	printf("d = ");
+	scanf("%d", &d);
 
 	if (a < 0) {
 		a = 0;
@@ -87,14 +107,23 @@ int main() {
 /* 4
 int main() {
 
-	int a = -2;
-	int b = 3;
-	int c = 4;
-	int d = 5;
-	int e = -6;
-	int f = 7;
-	int j = 8;
-	int h = -9;
+	int a, b, c, d, e, f, j, h;
+	printf("a = ");
+	scanf("%d", &a);
+	printf("b = ");
+	scanf("%d", &b);
+	printf("c = ");
+	scanf("%d", &c);
+	printf("d = ");
+	scanf("%d", &d);
+	printf("e = ");
+	scanf("%d", &e);
+	printf("f = ");
+	scanf("%d", &f);
+	printf("j = ");
+	scanf("%d", &j);
+	printf("h = ");
+	scanf("%d", &h);
 	int pol = 0;
 	int otr = 0;
 
@@ -151,17 +180,22 @@ int main() {
 	printf("otricatelnih: %d\n", otr);
 	
 }
-*/
+*/ 
 
 
 /* 5
 int main() {
 
 	int k = 10000;
-	int a[] = { 2, 3, 4, 1 };
+	int a[4];
 	int i;
-	int n;
-	for (i = 0; i < 4; i++) {
+	int n = 0;
+	
+	for (i = 1; i<5; i++) {
+    	printf("a[%d] = ", i);
+    	scanf("%d", &a[i]);
+	}
+	for (i = 1; i < 5; i++) {
 		if (a[i]< k){
 			k = a[i];
 			n = i;
@@ -171,13 +205,19 @@ int main() {
 }
 */
 
+
 /* 6
 int main() {  
 
 	int min = 100;
 	int max = 0;
-	int a[] = { 1, 5, 12, 13 };
+	int a[4];
 	int i;
+	
+	for (i = 0; i<4; i++) {
+    	printf("a[%d] = ", i);
+    	scanf("%d", &a[i]);
+	}
 	for (i = 0; i < 4; i++) {
 		if (min > a[i]) {
 			min = a[i];
@@ -231,21 +271,22 @@ int main() {
 /* 8
 int main() {
 
-	int i, j;
     int a[4];
-    for(i = 0 ; i < 4; i++) { 
-        scanf("%d", &a[i]);
-    }
-    for(i = 0 ; i < 4 - 1; i++) { 
-       for(j = 0 ; j < 4 - i - 1 ; j++) {  
-           if(a[j] > a[j+1]) {           
-              int b = a[j];
-              a[j] = a[j+1] ;
-              a[j+1] = b; 
-           }
-        }
-    }
-    printf("%d %d", a[3],a[2]);
+	int i;
+	int max1 = 0;
+	int max2 = 0;
+	
+	for (i = 0; i<4; i++) {
+    	printf("a[%d] = ", i);
+    	scanf("%d", &a[i]);
+	}
+	for (i = 0; i < 4; i++) {
+		if (a[i] > max1) {
+			max1 = max2;
+			max2 = a[i];
+		}			
+	}
+    printf("%d %d", max1, max2);
 }
 */
 
@@ -282,21 +323,21 @@ int main() {
 
 	if (max==a1) {
 		if (min==a2) 
-			printf("%i %i %i", a2, a1, a3);
+			printf("%d %d %d", a2, a1, a3);
 		if (min==a3) 
-			printf("%i %i %i", a3, a2, a1);	
+			printf("%d %d %d", a3, a2, a1);	
 	}
 	if (max==a2) {
 		if (min==a1) 
-			printf("%i %i %i", a2, a1, a3);
+			printf("%d %d %d", a2, a1, a3);
 		if (min==a3) 
-			printf("%i %i %i", a1, a3, a2);
+			printf("%d %d %d", a1, a3, a2);
 	}
 	if (max==a3) {
 		if (min==a1) 
-			printf("%i %i %i", a3, a2, a1);
+			printf("%d %d %d", a3, a2, a1);
 		if (min==a2) 
-			printf("%i %i %i", a1, a3, a2);
+			printf("%d %d %d", a1, a3, a2);
 	}
 }		
 */
